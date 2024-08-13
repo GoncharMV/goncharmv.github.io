@@ -1,7 +1,183 @@
 <!DOCTYPE html>
 <html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-</body>
+	<head>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	
+	<body>
+		<div class="container">
+			<header class="header">
+				<h1 id="title"> Five O'Clock English Shcool Application Form </h1>
+				<p id="description"> Fill out all the boxes and we will contact you </p>
+				
+			</header>
+		  
+			<form id="survey-form">
+			
+				<div class="form-group">
+					<label> 
+						<input 
+						name="apply"
+						value="self-apply"
+						class="radio-controls"
+						type="radio"
+						required
+						/> I will be the one taking class
+					</label>
+					
+					<label> 
+						<input 
+						name="apply"
+						value="child-apply"
+						class="radio-controls"
+						type="radio"
+						required
+						/> I am applying for my child
+					</label>
+					
+				</div>
+				
+				<div class="form-group">
+					<label id="name-label" for="name" > Student name </label>
+					<input
+					id="name"
+					type="text"
+					name="name"
+					class="form-controls"
+					placeholder="first name"
+					required
+					/>
+					
+					<input
+					id="name"
+					type="text"
+					name="name"
+					class="form-controls"
+					placeholder="last name"
+					required
+					/>
+				</div>
+				
+				<div class="form-group">
+					<label id="email-label" for="email"> Contact email </label>
+					<input
+					id="email"
+					type="email"
+					name="email"
+					class="form-controls"
+					placeholder="Enter your email"
+					required
+					/>
+				</div>
+				
+				<div class="form-group">
+					<label id="number-label" for="number"> Student age </label>
+					<input
+					id="number"
+					type="number"
+					name="number"
+					class="form-controls"
+					min="5"
+					max="99"
+					placeholder="Age"
+					/>
+				</div>
+				
+				<div class="form-group">
+					<p> What is your/your child estimated level of English? </p>
+					<select id="dropdown"
+					class="form-controls"
+					required >
+						<option disabled selected value> Select your estimated level </option>
+						<option value="option1"> Beginners </option>
+						<option value="option2"> Intermediate </option>
+						<option value="option3"> Advanced </option>
+					</select>
+				</div>
+				
+				<div class="form-group">
+					<p>What kind of classes you prefere? </p>
+					<label> 
+						<input 
+						name="study-plan"
+						value="individual"
+						class="radio-controls"
+						type="radio"
+						
+						/> individual sessions
+					</label>
+					
+					<label> 
+						<input 
+						name="study-plan"
+						value="small-grout"
+						class="radio-controls"
+						type="radio"
+						
+						/> group of 2-5 students
+					</label>
+					
+					<label> 
+						<input 
+						name="study-plan"
+						value="big-group"
+						class="radio-controls"
+						type="radio"
+						
+						/> group of 5-10 students
+					</label>
+					
+					
+				</div>
+				
+				<div class="form-group">
+					<p>The reason you want to learn English (choose all that apply)</p>
+					<label> 
+						<input 
+						name="study-reason"
+						value="work"
+						class="checkbox-controls"
+						type="checkbox"
+						
+						/> Work
+					</label>
+					
+					<label> 
+						<input 
+						name="study-reason"
+						value="exam"
+						class="checkbox-controls"
+						type="checkbox"
+						
+						/> Taking exam
+					</label>
+					
+					<label> 
+						<input 
+						name="study-reason"
+						value="travel"
+						class="checkbox-controls"
+						type="checkbox"
+						
+						/> Travel
+					</label>
+				</div>
+				
+				<div class="form-group">
+					<p> Anything you would like to add? </p>
+					<textarea
+					id="comments"
+					class="textarea-controls"
+					placeholder="imput your comments"
+					></textarea>
+				</div>
+				
+				<div class="form-group">
+					<button type="submit" id="submit" class="submit-button">
+					Submit</button>
+				</div>
+				
+			</form>	  
+		</div>
+	</body>
 </html>
