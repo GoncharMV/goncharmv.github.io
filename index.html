@@ -1,183 +1,64 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
 		<link rel="stylesheet" href="styles.css" />
+		
+		<title>Gonchar Margarita</title>
+		<link rel="icon" type="image/x-icon" href="favicon.png">
+		
+		<meta name="keywords" content="Java, HTML, Back-end">
+		<meta name="description" content="Portfolio web page">
+		<meta name="autor" content="Gonchar Margarita">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
 	</head>
 	
-	<body>
-		<div class="container">
-			<header class="header">
-				<h1 id="title"> Five O'Clock English Shcool Application Form </h1>
-				<p id="description"> Fill out all the boxes and we will contact you </p>
-				
-			</header>
-		  
-			<form id="survey-form">
-			
-				<div class="form-group">
-					<label> 
-						<input 
-						name="apply"
-						value="self-apply"
-						class="radio-controls"
-						type="radio"
-						required
-						/> I will be the one taking class
-					</label>
-					
-					<label> 
-						<input 
-						name="apply"
-						value="child-apply"
-						class="radio-controls"
-						type="radio"
-						required
-						/> I am applying for my child
-					</label>
-					
-				</div>
-				
-				<div class="form-group">
-					<label id="name-label" for="name" > Student name </label>
-					<input
-					id="name"
-					type="text"
-					name="name"
-					class="form-controls"
-					placeholder="first name"
-					required
-					/>
-					
-					<input
-					id="name"
-					type="text"
-					name="name"
-					class="form-controls"
-					placeholder="last name"
-					required
-					/>
-				</div>
-				
-				<div class="form-group">
-					<label id="email-label" for="email"> Contact email </label>
-					<input
-					id="email"
-					type="email"
-					name="email"
-					class="form-controls"
-					placeholder="Enter your email"
-					required
-					/>
-				</div>
-				
-				<div class="form-group">
-					<label id="number-label" for="number"> Student age </label>
-					<input
-					id="number"
-					type="number"
-					name="number"
-					class="form-controls"
-					min="5"
-					max="99"
-					placeholder="Age"
-					/>
-				</div>
-				
-				<div class="form-group">
-					<p> What is your/your child estimated level of English? </p>
-					<select id="dropdown"
-					class="form-controls"
-					required >
-						<option disabled selected value> Select your estimated level </option>
-						<option value="option1"> Beginners </option>
-						<option value="option2"> Intermediate </option>
-						<option value="option3"> Advanced </option>
-					</select>
-				</div>
-				
-				<div class="form-group">
-					<p>What kind of classes you prefere? </p>
-					<label> 
-						<input 
-						name="study-plan"
-						value="individual"
-						class="radio-controls"
-						type="radio"
-						
-						/> individual sessions
-					</label>
-					
-					<label> 
-						<input 
-						name="study-plan"
-						value="small-grout"
-						class="radio-controls"
-						type="radio"
-						
-						/> group of 2-5 students
-					</label>
-					
-					<label> 
-						<input 
-						name="study-plan"
-						value="big-group"
-						class="radio-controls"
-						type="radio"
-						
-						/> group of 5-10 students
-					</label>
-					
-					
-				</div>
-				
-				<div class="form-group">
-					<p>The reason you want to learn English (choose all that apply)</p>
-					<label> 
-						<input 
-						name="study-reason"
-						value="work"
-						class="checkbox-controls"
-						type="checkbox"
-						
-						/> Work
-					</label>
-					
-					<label> 
-						<input 
-						name="study-reason"
-						value="exam"
-						class="checkbox-controls"
-						type="checkbox"
-						
-						/> Taking exam
-					</label>
-					
-					<label> 
-						<input 
-						name="study-reason"
-						value="travel"
-						class="checkbox-controls"
-						type="checkbox"
-						
-						/> Travel
-					</label>
-				</div>
-				
-				<div class="form-group">
-					<p> Anything you would like to add? </p>
-					<textarea
-					id="comments"
-					class="textarea-controls"
-					placeholder="imput your comments"
-					></textarea>
-				</div>
-				
-				<div class="form-group">
-					<button type="submit" id="submit" class="submit-button">
-					Submit</button>
-				</div>
-				
-			</form>	  
-		</div>
-	</body>
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<header>
+<div class="top-container">
+  <h1>Gonchar Margarita</h1>
+  <h3>Back-end Developer</h3>
+  <p>Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+</div>
+
+
+   <nav class="header" id="myHeader">
+      <a href="#" class="nav_link">Projects</a>
+      <a href="#" class="nav_link">About</a>
+      <a href="#" class="nav_link">Contact</a>
+    </nav>
+
+</header>
+<body>
+<div class="content">
+  <h1>My projects</h1>
+  
+  
+  </div>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+
+</body>
 </html>
+
+
+

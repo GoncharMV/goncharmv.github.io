@@ -1,105 +1,36 @@
-
-:root {
-  --color-white: #f3f3f3;
-  --color-darkorange: #F1F0DB;
-  --color-pink-alpha: rgba(244, 214, 230, 0.8);
-  --color-red: #F8BC43;
-}
-
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
 body {
-	font-size: 1.125rem;
-	line-height: 1.5;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-body::before {
-	
-	content: '';
-	position: fixed;
-	top: 0;
-	left: 0;
-	height: 100%;
-	width: 100%;
-	z-index: -1;
-	background: var(--color-darkorange);
-	background-image: linear-gradient(
-		115deg,
-		rgba(244, 214, 230, 0.8),
-		rgba(233, 102, 11, 0.7)
-		),
-		url(https://images.unsplash.com/photo-1634128221889-82ed6efebfc3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
+.top-container {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
 }
 
-.container {
-	width: 100%;
-	margin: 3.125rem auto 0 auto;
+.header {
+  padding: 10px 16px;
+  background: #555;
+  color: #f1f1f1;
+  
+	text-align: center;
 }
 
-@media (min-width: 576px) {
-	.container {
-		max-width: 540px;
-	}
+.nav_link {
+	color: white;
 }
 
-@media (min-width: 768px) {
-	.container {
-		max-width: 720px;
-	}
+.content {
+  padding: 16px;
 }
 
-
-
-
-label {
-	display: flex;
-}
-
-form {
-	background: var(--color-pink-alpha);
-	padding: 2.5rem 0.625rem;
-	border-radius: 0.5rem;
-}
-
-@media (min-width: 480px) {
-  form {
-    padding: 2.5rem;
-  }
-}
-
-.form-group {
-	margin: 0 auto 1.25rem auto;
-	padding: 0.25rem;
-}
-
-.form-controls {
-	display: block;
-	width: 100%;
-	height: 2rem;
-	padding: 0.375rem 0.75rem;
-	border: 1px solid #ced4da;
-	border-radius: 0.25rem;
-	
-}
-
-.form-control {
-  display: block;
+.sticky {
+  position: fixed;
+  top: 0;
   width: 100%;
-  height: 2.375rem;
-  padding: 0.375rem 0.75rem;
-  color: #495057;
-  background-color: #fff;
-  background-clip: padding-box;
-  border: 1px solid #ced4da;
-  border-radius: 0.25rem;
-  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
+.sticky + .content {
+  padding-top: 102px;
+}
