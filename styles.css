@@ -4,15 +4,15 @@ body {
 }
 
 .top-container {
-  background-color: #f1f1f1;
+  background-color: #E5F9E0;
   padding: 30px;
   text-align: center;
+  
 }
 
 .header {
   padding: 10px 16px;
-  background: #555;
-  color: #f1f1f1;
+  background: #2F9C95;
   
 	text-align: center;
 }
@@ -33,4 +33,28 @@ body {
 
 .sticky + .content {
   padding-top: 102px;
+}
+
+h3, p {
+	color:#664147;
+	padding-right: 50px;
+	padding-left: 50px;
+}
+h1 {
+	color: #40C9A2;
+	text-align: center;
+	
+	
+	
+}
+
+.photo {
+	text-align: center;
+	color: #664147;
+}
+
+
+
+.img_cert {
+	width: 40%;
 }
