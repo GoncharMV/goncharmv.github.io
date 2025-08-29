@@ -1,240 +1,529 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-	<head>
-		<link rel="stylesheet" href="styles.css" />
-		
-		<title>Gonchar Margarita</title>
-		<link rel="icon" type="image/x-icon" href="favicon.png">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		
-		<meta name="keywords" content="Java, HTML, Back-end">
-		<meta name="description" content="Portfolio web page">
-		<meta name="autor" content="Gonchar Margarita">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		
-	</head>
-	
-<!DOCTYPE html>
-<html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css"/>
+    <title>Gonchar Margarita</title>
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+    <meta name="keywords" content="Java, HTML, Backend, QA Automation">
+    <meta name="description" content="Portfolio web page">
+    <meta name="autor" content="Gonchar Margarita">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
-
-<nav class="mainNav">
-   <div class="mainNav_logo">Gonchar Margarita</div>
-   <div class="mainNav_links">
-      <a href="#about_topic" class="mainNav_link">About</a>
-      <a href="#project_topic" class="mainNav_link">Projects</a>
-      <a href="#contact_topic" class="mainNav_link">Contacts</a>
-   </div>
-   
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="#">Gonchar Margarita</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#about">About me</a></li>
+                <li class="nav-item"><a class="nav-link" href="#skills">Technologies</a></li>
+                <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
 </nav>
 
-<header class="mainHeading">
-   <div class="mainHeading_content">
-      <article class="mainHeading_text">
-         <p class="mainHeading_preTitle">Portfolio</p>
-         <h2 class="mainHeading_title">Back-end Developer</h2>
-         <p class="mainHeading_description">
-            I am a back-end Java developer with over a year of experience in personal and academic projects. Recently, I launched an Android application in Java on Google Play. I also have a solid understanding of HTML and CSS and have an interest in web development.
-         </p>
-         <a href="https://drive.google.com/file/d/1RWWQwQE0itrszV1Exr74xa5KyW_9WQ7o/view?usp=sharing" target="_blank"><button class="cta">Resume</button></a>
-      </article>
-
-
-   </div>
+<header class="hero-header bg-primary text-white text-center py-5">
+    <div class="container">
+        <h1 class="display-4 fw-bold">Gonchar Margarita</h1>
+        <p class="lead">QA Automation Engineer | Java Developer</p>
+        <a href="https://drive.google.com/file/d/1LmDPiLm0qK1u1OFOKlWBvuWADJ24cZNb/view?usp=sharing" target="_blank"
+           class="btn btn-light btn-lg mt-3">Download CV</a>
+    </div>
 </header>
-<body>
-<div class="content">
+
+<section id="about" class="py-5">
+    <div class="container text-center">
+        <h2 class="mb-4">About me</h2>
+        <p class="text-muted">Hi! Hello! Привет! My name is Rita, and I am really into qa and java development. Also, I
+            create my own apps and participate in game jams - I LOVE a good challenge, it keeps me motivated and brights
+            my days.</p>
+        <p class="text-muted">Do you have a good challenge for me? Just want to chat? Don't be shy to text me! I'm
+            always open to new people. </p>
+    </div>
+</section>
 
 
+<section id="skills" class="bg-light">
+    <div class="container">
+        <h2 class="text-center mb-5">Technologies</h2>
 
-	<div id="project_topic" class="content_section">
-	
-		<h1 class="mainHeading_title">My projects</h1>
-		<div class="project_row">
-			<div class="project_column">
-				<div class="project_card">
-				 <img src="images/FG_logo.png" alt="fandom_guess" style="width:100%">
-				 <div class="project_container">
-					<p class="mainHeading_preTitle">Play a word guessing game!</p>
-					<h2 class="project_title">Android application</h2>
-					<p>The goal of the game is to get your team to guess a specific fandom-related word without using a list of forbidden terms provided on the card.</p>
-					<p><a href="https://goncharmv.github.io/fandom-guess/" target="_blank"><button class="cta">Portfolio</button></a></p>
-				 </div>
-				</div>
-			</div>
-			
-			<div class="project_column">
-				<div class="project_card">
-				 <img src="images/s_buddy.jpeg" alt="buddy" style="width:100%">
-				 <div class="project_container">
-					<p class="mainHeading_preTitle">Social Buddy</p>
-					<h2 class="project_title">Web application</h2>
-					<p>The event poster web application allows to create events and find the participants. </p>
-					<p><a href="https://github.com/GoncharMV/java-explore-with-me" target="_blank"><button class="cta">Portfolio</button></a></p>
-				 </div>
-				</div>
-			</div>
-			
-			<div class="project_column">
-				<div class="project_card">
-				 <img src="images/bazar.jpeg" alt="bazar" style="width:100%">
-				 <div class="project_container">
-					<p class="mainHeading_preTitle">Borrow Bazaar</p>
-					<h2 class="project_title">Web application</h2>
-					<p>The backend API server that allows users to share items among themselves: add items, submit requests for item additions, book items, and manage booking requests for their own items. 
-						<p><a href="https://github.com/GoncharMV/java-shareit" target="_blank"><button class="cta">Portfolio</button></a></p>
-				 </div>
-				</div>
-			</div>
-			
-			<div class="project_column">
-				<div class="project_card">
-				 <img src="images/movie.jpeg" alt="movie" style="width:100%">
-				 <div class="project_container">
-					<p class="mainHeading_preTitle">Movie Vault</p>
-					<h2 class="project_title">Web application</h2>
-					<p>The IMDb-inspired service, stores the movies database and allows users to rate movies and find recommendations. </p>
-					<p><a href="https://github.com/GoncharMV/java-filmorate" target="_blank"><button class="cta">Portfolio</button></a></p>
-				 </div>
-				</div>
-			</div>
-	
-	<div class="project_column">
-		<div class="project_card">
-		 <img src="images/meat.png" alt="catch_meat" style="width:100%">
-		 <div class="project_container">
-			<p class="mainHeading_preTitle">Catch the meat!</p>
-			<h2 class="project_title">2D catcher game</h2>
-			<p>Simple little game with a PLOT TWIST. Can you find it!? Play for Luffy, dodge the knifes and catch objects. Don't miss the devil fruits! </p>
-			<p><a href="https://grettastic.itch.io/catch-the-meat" target="_blank"><button class="cta">Play</button></a></p>
-		 </div>
-		</div>
-	</div>
-	
-	<div class="project_column">
-		<div class="project_card">
-		 <img src="images/house.png" alt="house" style="width:100%">
-		 <div class="project_container">
-			<p class="mainHeading_preTitle">Home Haunting</p>
-			<h2 class="project_title">3D quest game</h2>
-			<p>Possess furniture to cause mayhem and scare the NPC! Levitating chairs and sofas isn't as easy as you think, but with practice you'll be the best poltergeist ever! </p>
-			<p><a href="https://grettastic.itch.io/home-haunting" target="_blank"><button class="cta">Play</button></a></p>
-		 </div>
-		</div>
-	</div>	<div class="project_column">
-		<div class="project_card">
-		 <img src="images/pie.png" alt="pie_quest" style="width:100%">
-		 <div class="project_container">
-			<p class="mainHeading_preTitle">Pie Quest</p>
-			<h2 class="project_title">2D platformer game</h2>
-			<p>It's a fun little game where you cannot die or loose. Go out into the wild and collect fruits to bake a pie. </p>
-			
-			<p><a href="https://grettastic.itch.io/pie-quest" target="_blank"><button class="cta">Play</button></a></p>
-		 </div>
-		</div>
-	</div>
-	
-	
-	</div>
-		
-		
-	</div>
-	
-	<div id="about_topic" class="content_section">
-	
-		<h1 class="mainHeading_title">About me</h1>
-		<div class="aboutme">
-		
-		<p class="aboutme_text">Hello, I’m Rita. And I’m gonna be King of the Pirates! </p>
+        <div class="row text-center g-4">
+            <div class="col-6 col-md-3">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" width="60"
+                     alt="Java">
+                <p class="mt-2">Java</p>
+            </div>
+            <div class="col-6 col-md-3">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/selenium/selenium-original.svg" width="60"
+                     alt="Selenium">
+                <p class="mt-2">Selenium</p>
+            </div>
+            <div class="col-6 col-md-3">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg" width="60"
+                     alt="Jenkins">
+                <p class="mt-2">Jenkins / CI/CD</p>
+            </div>
+            <div class="col-6 col-md-3">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" width="60"
+                     alt="Spring">
+                <p class="mt-2">Spring</p>
+            </div>
+            <div class="col-6 col-md-3">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
+                     width="60" alt="PostgreSQL">
+                <p class="mt-2">PostgreSQL</p>
+            </div>
+            <div class="col-6 col-md-3">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="60"
+                     alt="GitHub">
+                <p class="mt-2">GitHub</p>
+            </div>
+            <div class="col-6 col-md-3">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" width="60"
+                     alt="Docker">
+                <p class="mt-2">Docker</p>
+            </div>
+            <div class="col-6 col-md-3">
+                <img src="https://cdn-icons-png.flaticon.com/512/942/942748.png" width="60" alt="API">
+                <p class="mt-2">API Testing</p>
+            </div>
+        </div>
 
-		<p class="aboutme_text">I have many projects I’ve been developing during my year of study Java, and after as a solo developer. However, the project I am most proud of is the Fandom Guess application, which I developed myself with help of a designer and a translator. You can find my app on Google Play or read more about its development process on its web page using the link above.
-In addition to that, I’ve been trying myself in game design; I have created three completed games
- using the Godot engine and currently have another one in development.</p>
+        <h4 class="text-center mt-5 mb-4">Learning</h4>
+        <div class="row text-center g-4">
+            <div class="col-6 col-md-3">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg" width="60"
+                     alt="Dart">
+                <p class="mt-2">Dart</p>
+            </div>
+            <div class="col-6 col-md-3">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" width="60"
+                     alt="Flutter">
+                <p class="mt-2">Flutter</p>
+            </div>
+        </div>
 
+        <h4 class="text-center mt-5 mb-4">Extra</h4>
+        <div class="row text-center g-4">
+            <div class="col-6 col-md-3">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="60"
+                     alt="HTML5">
+                <p class="mt-2">HTML5</p>
+            </div>
+            <div class="col-6 col-md-3">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="60"
+                     alt="CSS3">
+                <p class="mt-2">CSS3</p>
+            </div>
+            <div class="col-6 col-md-3">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                     width="60" alt="JavaScript">
+                <p class="mt-2">JavaScript</p>
+            </div>
+        </div>
+    </div>
+</section>
 
-		<p class="aboutme_text">I can call myself an experienced team-player.
-In my recent project, Fandom Guess, besides developing the app singlehandedly I was responsible for the organisation. I set priorities, handed out assignments, and coordinated the work of my team, as well as organizing and supervising the work of 20 testers. 
-Another example is a group project I had with 4 other students during my studies; we worked on the business logic of the project, developed new features and had hands-on experience.
-Even back in my student years I was a regular participant of creative team projects; with teams 
-up to 20 people—each proficient in different areas—I was responsible for communication between players and
- for presentation of our works, using HTML and CSS.</p>
+<section id="experience" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-5">Experience</h2>
+        <div class="timeline">
 
-		<p class="aboutme_text">I am looking for work mostly as a Java developer; however, I am open to other opportunities.  </p>
+            <div class="timeline-item left">
+                <div class="timeline-content">
+                    <h5>Freelance</h5>
+                    <ul>
+                        <p>Did all kind of things for this business lady who needed a tech master to keep her website
+                            afloat during the huge congress. Had to learn PHP and JS a little bit to be able to finish
+                            the job. Happy I had that experience tho!
+                        </p>
+                    </ul>
+                </div>
+            </div>
 
-		<p class="aboutme_text">In my free time I’m kin on drawing, walking with my dog and playing with my pet rats. Look at them! Aren’t they cute?
-The white one is named Loona, and the black one is Shusha. They are very gentle creatures who love to cuddle and to help me with work. </p>
+            <div class="timeline-item right">
+                <div class="timeline-content">
+                    <h5>A1QA QA Automation</h5>
+                    <p>Had a super fun internship with a1qa! Learned Selenium, Jenkins, CI/CD and Aquality Framework.
+                        Later, I had an express course with API testing as well.</p>
+                </div>
+            </div>
 
-		<img src="images/rats.jpg" alt="rats" class="aboutme_img">
+            <div class="timeline-item left">
+                <div class="timeline-content">
+                    <h5>Freelance</h5>
+                    <p>Mostly created my app using Java and some sweet and simple games.</p>
+                </div>
+            </div>
 
-		<p class="aboutme_text" style="text-align: center" >Feel free to contact me! </p>
-		
-		</div>
+            <div class="timeline-item right">
+                <div class="timeline-content">
+                    <h5>Yandex Practicum</h5>
+                    <p>Learned A LOT about Java and desining web applications. Super fun course, made 5 different
+                        projects various difficulty, got to work in a team with my peers as well.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
 
 
-	</div>
-	
-	<div id="contact_topic" class="content_section" >
-		<h1 class="mainHeading_title">Work with me</h1>
-		
-		<div align="center">
-		<a href="https://github.com/GoncharMV" target="_blank" class="fa fa-github"></a>
-		<a href="https://www.linkedin.com/in/gonchar-mv/" target="_blank" class="fa fa-linkedin"></a>
-		<a href="https://mail.google.com/mail/?view=cm&source=mailto&to=gonchar.m.v.95@gmail.com" target="_blank" class="fa fa-envelope"></a>
-		<a href="https://wa.link/2bqjcp" target="_blank" class="fa fa-whatsapp"></a>
-		
-		<a href="https://www.facebook.com/profile.php?id=61553669300877" target="_blank" class="fa fa-facebook"></a>
-		</div>
-		
-	</div>
-	
-	<div id="doc_topic" class="content_section">
-		<h1 class="mainHeading_title">Certification</h1>
-		
-		<div class="project_row">
-		<div class="project_column">
-				<div class="project_card">
-				 <a href="images/java.jpg" target="_blank"><img src="images/java.jpg" alt="java_certificate" style="width:100%"></a>
-				 <div class="project_container">
-					<p class="mainHeading_preTitle">Java Developer Professional Training</p>
-					<h2 class="project_title">Certification</h2>
-					<p>I developed 5 applications, primarily using Java 11, with a focus on solving real-world problems through object-oriented programming (OOP) principles. These projects are publicly available on my GitHub, where they underwent thorough review by peers and by working professionals.  </p>
-				 </div>
-				</div>
-			</div><div class="project_column">
-				<div class="project_card">
-				 <a href="https://badges.wes.org/Evidence?i=13f87f83-13d0-4f3e-8c72-49cf7ac96b3b&type=ca" target="_blank"><img src="images/diploma.png" alt="diploma" style="width:100%"></a>
-				 <div class="project_container">
-					<p class="mainHeading_preTitle">Bachelor Degree</p>
-					<h2 class="project_title">Diploma</h2>
-					<p>Country of Education: Russia </br>
-Credential Name: Bachelor's Degree </br>
-Major: Technological Machines and Equipment</br>
-Awarded by: Moscow Technological University</br>
-Equivalency in Canada: Bachelor's degree (four years)</p>
-				 </div>
-				</div>
-			</div>
-		</div>
-		
-	</div>
-  
-  </div>
+<section id="projects" class="py-5">
+    <div class="container my-5">
+        <h2 class="text-center mb-4">My projects</h2>
+        <div class="row g-4">
 
-<script>
+            <!-- Проект 1 -->
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="images/FG_logo.png" class="card-img-top" alt="Fandom Guess">
+                    <div class="card-body">
+                        <h5 class="card-title">Fandom Guess</h5>
+                        <p class="card-text">Fandom game on Java to play with friends (Android).</p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#project1Modal">
+                            Learn more
+                        </button>
+                    </div>
+                </div>
+            </div>
 
-</script>
+            <!-- Проект 3 -->
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="images/ink_logo.jpg" class="card-img-top" alt="Inkhabit">
+                    <div class="card-body">
+                        <h5 class="card-title">Inkhabit</h5>
+                        <p class="card-text">Android and desktop application on Flutter (in development)</p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#project3Modal">
+                            Learn more
+                        </button>
+                    </div>
+                </div>
+            </div>
 
+            <!-- Проект 2 -->
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="images/evm.png" class="card-img-top" alt="Explore with me">
+                    <div class="card-body">
+                        <h5 class="card-title">Explore with me</h5>
+                        <p class="card-text">Java + Spring + PostgreSQL.</p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#project2Modal">
+                            Learn more
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Проект 4 -->
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="images/house.png" class="card-img-top" alt="Haunt this house">
+                    <div class="card-body">
+                        <h5 class="card-title">Haunt this house</h5>
+                        <p class="card-text">3D game on Godot.</p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#project4Modal">
+                            Learn more
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Проект 5 -->
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="images/meat.png" class="card-img-top" alt="Catch the meat">
+                    <div class="card-body">
+                        <h5 class="card-title">Catch the Meat</h5>
+                        <p class="card-text">Game on Unity + C#.</p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#project5Modal">
+                            Learn more
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Проект 6 -->
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="images/pie.png" class="card-img-top" alt="Pie Quest">
+                    <div class="card-body">
+                        <h5 class="card-title">Pie Quest</h5>
+                        <p class="card-text">Game on godot.</p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#project6Modal">
+                            Learn more
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- проект 1 -->
+    <div class="modal fade" id="project1Modal" tabindex="-1" aria-labelledby="project1Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="project1Label">Fandom Guess (Android App)</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="project1Carousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="images/fg1.jpg" class="d-block carousel-img" alt="photo 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/fg2.jpg" class="d-block carousel-img" alt="photo 2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/fg3.jpg" class="d-block carousel-img" alt="photo 3">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#project1Carousel"
+                                data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#project1Carousel"
+                                data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                    </div>
+
+                    <p> Developed the game with different mechanics: timer, language switching, round management. To get
+                        this just right I collaborated with a designer on UX/UI, game logic, interface elements, and
+                        visual style. Was lucky and found over 20 testers who actually had tested the app and wrote the
+                        feedback. Had to change EVERYTHING in the app (esp design) due to their recommendations.
+                        Published it on Google Play, and now it has 50+ downloads, yay
+                    </p>
+                    <p><strong>Stack:</strong> Java, Android SDK</p>
+                    <a href="https://play.google.com/store/apps/details?id=com.grettastic.guess_app"
+                       class="btn btn-success" target="_blank">Google Play</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- проект 2 -->
+    <div class="modal fade" id="project2Modal" tabindex="-1" aria-labelledby="project2Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="project2Label">Explore with me</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="images/evm.png" class="img-fluid mb-3" alt="Photo explore">
+                    <p>My final project with Yandex Practicum. This is a two-module backend with main service and stats
+                        service. I implemented business logic with 3 API layers: public, private and admin. Tested via
+                        Postman, database PostgreSQL
+                        Publicly you can search events, privately has CRUD, requests and comments and admin manages
+                        categories and event moderation
+                    </p>
+                    <p><strong>Stack:</strong> Java, Spring Boot, Maven, Docker, PostgreSQL, Hibernate, REST API,
+                        Swagger, Postman</p>
+                    <a href="https://github.com/GoncharMV/java-explore-with-me"
+                       class="btn btn-success" target="_blank">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- проект 3 -->
+    <div class="modal fade" id="project3Modal" tabindex="-1" aria-labelledby="project3Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="project3Label">Inkhabit (Android App)</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="project3Carousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="images/ink1.jpg" class="d-block carousel-img" alt="photo 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/ink2.jpg" class="d-block carousel-img" alt="photo 2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/ink3.jpg" class="d-block carousel-img" alt="photo 3">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#project1Carousel"
+                                data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#project1Carousel"
+                                data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                    </div>
+                    <p>A mobile application, developed using Flutter. Implemented server-side logic for file management
+                        (reading, writing, saving), as well as a statistics and goal-setting system.</p>
+                    <p>My friend actually made me do this, this app is designed for writers, to help manage the
+                        statistics and progress. It's still in development so you can't really test it. But if you want,
+                        you can text me and I give you access to the beta!</p>
+                    <p><strong>Stack:</strong> Flutter, Dart</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- проект 4 -->
+    <div class="modal fade" id="project4Modal" tabindex="-1" aria-labelledby="project4Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="project4Label">Haunt this house</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="project4Carousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="images/hth3.png" class="d-block carousel-img" alt="photo 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/hth1.png" class="d-block carousel-img" alt="photo 2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/hth2.png" class="d-block carousel-img" alt="photo 3">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#project1Carousel"
+                                data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#project1Carousel"
+                                data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                    </div>
+
+                    <p> Possess furniture to cause mayhem and scare the NPC! Levitating chairs and sofas isn't as easy
+                        as you think, but with practice you'll be the best poltergeist ever!
+                        3d game I made for Horror Game Jam from scratch in 7 days. It was an amazing experience I'd like
+                        to do this again someday!</p>
+                    <p><strong>Stack:</strong> Godot</p>
+                    <a href="https://grettastic.itch.io/home-haunting" class="btn btn-success" target="_blank">Play
+                        now!</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- проект 5 -->
+    <div class="modal fade" id="project5Modal" tabindex="-1" aria-labelledby="project5Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="project5Label">Catch the meat</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="project5Carousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="images/ctm2.png" class="d-block carousel-img" alt="photo 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/ctm1.png" class="d-block carousel-img" alt="photo 2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/ctm3.png" class="d-block carousel-img" alt="photo 3">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#project1Carousel"
+                                data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#project1Carousel"
+                                data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                    </div>
+
+                    <p> In this game, players have to catch falling objects to earn points and set new high scores.
+                        Created using Unity and C#
+                        Drawing inspiration from the iconic Luffy from One Piece, I do not have any profit from this
+                        game it only created for study and fun</p>
+                    <p><strong>Stack:</strong>Unity, C#</p>
+                    <a href="https://grettastic.itch.io/catch-the-meat" class="btn btn-success" target="_blank">Play
+                        now!</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- проект 6 -->
+    <div class="modal fade" id="project6Modal" tabindex="-1" aria-labelledby="project6Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="project6Label">Pie quest</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="project6Carousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="images/pq1.png" class="d-block carousel-img" alt="photo 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/pq2.png" class="d-block carousel-img" alt="photo 2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/pq3.png" class="d-block carousel-img" alt="photo 3">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#project1Carousel"
+                                data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#project1Carousel"
+                                data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                    </div>
+
+                    <p>I made an endless 2d platformer. </p>
+                    <p><strong>Stack:</strong> Godot</p>
+                    <a href="https://grettastic.itch.io/pie-quest" class="btn btn-success" target="_blank">Play now!</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<section id="contact" class="footer-section bg-dark text-white py-5">
+    <div class="container text-center">
+        <h2 class="fw-bold mb-4">Contact</h2>
+        <p>Email: <a href="mailto:gonchar.m.v.95@gmail.com" target="_blank"
+                     class="text-info">gonchar.m.v.95@gmail.com</a></p>
+        <p>GitHub: <a href="https://github.com/GoncharMV" target="_blank" class="text-info">github.com/GoncharMV</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/gonchar-mv/" target="_blank" class="text-info">linkedin.com/in/gonchar-mv</a>
+        </p>
+    </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
-
-<footer class="mainFooter">
-<div class="mainFooter_background">
-</div>
-	
-</footer>
 </html>
-
-
-
